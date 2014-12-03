@@ -2,7 +2,6 @@ require('bootstrap-webpack');
 
 var React = require('react');
 var App = require('./app.jsx').App;
-var $ = require('jquery');
 
 require('./ext.js');
 

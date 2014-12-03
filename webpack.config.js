@@ -1,3 +1,5 @@
+var webpack = require("webpack");
+
 module.exports = {
   module: {
     loaders: [
@@ -15,6 +17,11 @@ module.exports = {
       { test: /\.jsx$/, loader: 'jsx' }
     ]
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery"
+    })
+  ],
   entry: './main.jsx',
   output: {
     publicPath: "dist/",
